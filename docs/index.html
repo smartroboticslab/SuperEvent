@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>SuperEvent Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/eyecon.svg">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -52,21 +52,22 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">SuperEvent: Cross-Modal Learning of Event-based Keypoint Detection for SLAM</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://yannickburkhardt.github.io/" target="_blank">Yannick Burkhardt</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://simon-schaefer.github.io/" target="_blank">Simon Schaefer</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://www.professoren.tum.de/leutenegger-stefan" target="_blank">Stefan Leutenegger</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">
+                      <small><a href="https://srl.cit.tum.de/" target="_blank">Technical University of Munich</a>, <a href="https://mcml.ai/" target="_blank">Munich Center for Machine Learning</a></small><br>
+                      <small>In review for <a href="https://iccv.thecvf.com/" target="_blank">International Conference on Computer Vision (ICCV) 2025</a></small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -83,7 +84,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,11 +92,11 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/smartroboticslab/SuperEvent" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -123,33 +124,62 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Qualitative Results</h2></h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <iframe class="dynamic-iframe" src="slider.html?prefix=ddd20_rec1499023756_00000867_00000883" width="70%" style="margin: 0 auto; display: block;"></iframe>
+        <!-- Your image here -->
+        <h2 class="subtitle has-text-centered">
+          Unseen sequence rec1499023756 of the DAVIS Driving Dataset 2020 (DDD20).
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <iframe class="dynamic-iframe" src="slider.html?prefix=ddd20_rec1501614399_00007769_00007779" width="70%" style="margin: 0 auto; display: block;"></iframe>
+        <h2 class="subtitle has-text-centered">
+          Unseen sequence rec1501614399 of the DAVIS Driving Dataset 2020 (DDD20).
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <iframe class="dynamic-iframe" src="slider.html?prefix=fpv_indoor_45_14_davis_with_gt_00001659_00001660" width="70%" style="margin: 0 auto; display: block;"></iframe>
+        <h2 class="subtitle has-text-centered">
+          Unseen sequence Indoor 45° downward facing 14 of the UZH-FPV Drone Racing dataset.
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <iframe class="dynamic-iframe" src="slider.html?prefix=vivid_varying_robust_00000461_00000482" width="70%" style="margin: 0 auto; display: block;"></iframe>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Unseen sequence Varying Robust of the Vision for Visibility Dataset (ViViD++).
       </h2>
     </div>
   </div>
+</div>
+</div>
 </section>
-<!-- End teaser video -->
+<!-- End image carousel -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-normal">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Event-based keypoint detection and matching holds significant potential, enabling the integration of event sensors into highly optimized Visual SLAM systems developed for frame cameras over decades of research. Unfortunately, existing approaches struggle with the motion-dependent appearance of keypoints and the complex noise prevalent in event streams, resulting in severely limited feature matching capabilities and poor performance on downstream tasks. To mitigate this problem, we propose SuperEvent, a data-driven approach to predict stable keypoints with expressive descriptors. Due to the absence of event datasets with ground truth keypoint labels, we leverage existing frame-based keypoint detectors on readily available event-aligned and synchronized gray-scale frames for self-supervision: we generate temporally sparse keypoint pseudo-labels considering that events are a product of both scene appearance and camera motion. Combined with our novel, information-rich event representation, we enable SuperEvent to learn robust keypoint detection and description in event streams. Finally, we demonstrate the usefulness of SuperEvent by its integration into a modern sparse keypoint and descriptor-based SLAM framework originally developed for traditional cameras, surpassing the state-of-the-art in event-based SLAM by a wide margin.
           </p>
+        </div>
+          <div class="item">
+            <img src="static/images/pipeline_white.svg" alt="SuperEvent Pipeline"/>
+            <h2 class="subtitle has-text-centered">
+              Data processing pipeline for training and inference of SuperEvent.
+            </h2>
         </div>
       </div>
     </div>
@@ -162,33 +192,48 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3 has-text-centered">Advantages of Event Camera Matching</h2></h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
+        <iframe class="dynamic-iframe" src="slider.html?prefix=fpv_outdoor_45_2_davis_00002149_00002150" width="70%" style="margin: 0 auto; display: block;"></iframe>
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Frame with motion blur (UZH-FPV, Outdoor 45° downward facing 2).
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <iframe class="dynamic-iframe" src="slider.html?prefix=fpv_indoor_45_14_davis_with_gt_00000960_00000961" width="70%" style="margin: 0 auto; display: block;"></iframe>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Frame with motion blur (UZH-FPV, Indoor 45° downward facing 14).
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <iframe class="dynamic-iframe" src="slider.html?prefix=fpv_outdoor_45_1_davis_with_gt_00001266_00001267" width="70%" style="margin: 0 auto; display: block;"></iframe>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+          Frame with motion blur (UZH-FPV, Outdoor 45° downward facing 1).
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <iframe class="dynamic-iframe" src="slider.html?prefix=ddd20_rec1501614399_00004869_00004870" width="70%" style="margin: 0 auto; display: block;"></iframe>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        HDR: frame overexposed (DDD20, rec1501614399).
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <iframe class="dynamic-iframe" src="slider.html?prefix=ddd20_rec1502599151_00005180_00005181" width="70%" style="margin: 0 auto; display: block;"></iframe>
+      <h2 class="subtitle has-text-centered">
+        HDR: frame underexposed (DDD20, rec1502599151).
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <iframe class="dynamic-iframe" src="slider.html?prefix=vivid_varying_robust_00000429_00000430" width="70%" style="margin: 0 auto; display: block;"></iframe>
+      <h2 class="subtitle has-text-centered">
+        HDR: frame underexposed since light is turned off, many negative events (ViViD++, Varying Robust).
       </h2>
     </div>
   </div>
@@ -198,89 +243,13 @@
 <!-- End image carousel -->
 
 
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
 
@@ -308,5 +277,20 @@
 
     <!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+  <script>
+    function receiveMessage(event) {
+      if (event.data.frameHeight) {
+        const iframes = document.querySelectorAll(".dynamic-iframe");
+        iframes.forEach((iframe) => {
+          if (iframe.contentWindow === event.source) {
+            iframe.style.height = event.data.frameHeight + "px";
+          }
+        });
+      }
+    }
+  
+    window.addEventListener("message", receiveMessage, false);
+  </script>
+
+</body>
+</html>
