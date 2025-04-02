@@ -16,10 +16,12 @@
         }
 
         .switch-toggle {
-            width: 30em;
+            width: clamp(0px, 80vw, 500px);
             display: flex;
             justify-content: center;
+            margin-top: 2px;
             margin-bottom: 20px;
+            font-size: clamp(0px, 4vw, 16px);
         }
 
         .switch-toggle label:not(.disabled) {
@@ -36,11 +38,11 @@
 
         .vertical-text {
             writing-mode: vertical-rl;
-            font-size: 18px;
+            font-size: clamp(0px, 2.5vw, 20px);
             font-weight: bold;
             text-align: center;
             white-space: nowrap;
-            padding-right: 10px;
+            padding-right: calc(35px - 2.5vw);
             position: absolute; /* Position vertically relative to the image */
             left: -40px; /* Adjust to control horizontal positioning */
         }
