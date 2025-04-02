@@ -1,2 +1,2 @@
 # SuperEvent
-Data-driven keypoint detection and description in event streams
+Code coming soon. In the meantime, please check out our [Project Page](https://smartroboticslab.github.io/SuperEvent/).
